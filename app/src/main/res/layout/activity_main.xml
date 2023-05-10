@@ -38,7 +38,7 @@
         android:layout_height="match_parent"
         android:gravity="center_horizontal"
         android:orientation="vertical"
-        android:layout_weight=".5">
+        android:layout_weight="1">
         >
         <Button
             android:layout_width="@dimen/_140sdp"
@@ -46,14 +46,48 @@
             app:backgroundTint="@null"
             android:background="@drawable/round"
             android:text="PLAY"
-            ></Button>
-        <Button
-            android:layout_width="@dimen/_40sdp"
-            android:layout_height="@dimen/_40sdp"
+            android:id="@+id/play"
 
             ></Button>
+
+
 
   </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+       <Button
+           android:layout_width="@dimen/_45sdp"
+           android:layout_height="@dimen/_45sdp"
+           android:layout_margin="@dimen/_10sdp"
+           app:backgroundTint="@null"
+           android:background="@drawable/ranking"
+           android:id="@+id/rank"
+           ></Button>
+        <Button
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_margin="@dimen/_10sdp"
+            app:backgroundTint="@null"
+            android:background="@drawable/growth"
+            android:id="@+id/growth"
+            ></Button>
+        <Button
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_margin="@dimen/_10sdp"
+            app:backgroundTint="@null"
+            android:background="@drawable/trophy"
+            android:id="@+id/trophy"
+            ></Button>
+
+
+
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
