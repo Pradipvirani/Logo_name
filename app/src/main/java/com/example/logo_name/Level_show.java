@@ -1,6 +1,7 @@
 package com.example.logo_name;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.view.View;
@@ -8,15 +9,13 @@ import android.widget.Button;
 import android.widget.ListView;
 
 public class Level_show extends AppCompatActivity implements View.OnClickListener {
-    Button back;
-    ListView listView;
+    RecyclerView recyclerView;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_level_show);
-        back=findViewById(R.id.back);
-        listView=findViewById(R.id.list_view);
-        back.setOnClickListener(this);
+        recyclerView=findViewById(R.id.recyclerview);
 
     }
 
