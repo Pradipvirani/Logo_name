@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+    android:layout_height="match_parent">
     <TextView
         android:layout_width="@dimen/_50sdp"
         android:layout_height="@dimen/_50sdp"
@@ -16,14 +15,23 @@
         android:layout_marginTop="@dimen/_8sdp"
         android:layout_marginLeft="@dimen/_10sdp"
         />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/txt_round"
+            android:text="Level 1"
+            android:textSize="@dimen/_25sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:id="@+id/level_txt"
+            android:textStyle="bold"/>
     <ProgressBar
         android:id="@+id/determinateBar"
         style="@android:style/Widget.ProgressBar.Horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/txt_round"
-        android:layout_marginTop="@dimen/_25sdp"
-
+        android:layout_toEndOf="@id/txt_round"
+        android:layout_below="@id/level_txt"
         android:progress="2"/>
 </RelativeLayout>
 
