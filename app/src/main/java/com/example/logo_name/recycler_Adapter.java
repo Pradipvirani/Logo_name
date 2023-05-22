@@ -1,14 +1,16 @@
 package com.example.logo_name;
 
-import android.content.Intent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
 
-public class Level_adapter extends BaseAdapter {
+public class recycler_Adapter extends BaseAdapter {
     MainActivity mainActivity;
     Level_show level_show;
+
+    public recycler_Adapter(Level_show level_show, String[] level) {
+    }
 
     @Override
     public int getCount() {

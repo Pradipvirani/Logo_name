@@ -27,9 +27,10 @@
             android:textStyle="bold"/>
     <ProgressBar
         android:id="@+id/determinateBar"
-        style="@android:style/Widget.ProgressBar.Horizontal"
+        style="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_6sdp"
         android:layout_toEndOf="@id/txt_round"
         android:layout_below="@id/level_txt"
         android:progress="2"/>
