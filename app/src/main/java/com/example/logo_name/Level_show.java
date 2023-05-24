@@ -1,14 +1,16 @@
 package com.example.logo_name;
 
+import static android.widget.LinearLayout.*;
+
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.ListView;
+import android.widget.LinearLayout;
 
-public class Level_show extends AppCompatActivity implements View.OnClickListener {
+
+public class Level_show extends AppCompatActivity  {
     RecyclerView recyclerView;
     String level []={"level 1","level 2","level 3","level 4"};
     @Override
@@ -18,12 +20,11 @@ public class Level_show extends AppCompatActivity implements View.OnClickListene
         setContentView(R.layout.activity_level_show);
         recyclerView=findViewById(R.id.recyclerview);
         recycler_Adapter recycler_adapter = new recycler_Adapter(this,level);
-
-
-    }
-
-    @Override
-    public void onClick(View view) {
+        LinearLayoutManager manager=new LinearLayoutManager( this, RecyclerView.VERTICAL,false);
+        recyclerView.setLayoutManager(manager);
+        recyclerView.setAdapter(recycler_adapter);
 
     }
+
+
 }
